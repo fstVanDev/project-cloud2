@@ -100,7 +100,7 @@ export const ConnectButtton1 = styled.button`
   background: #111;
   cursor: pointer;
   position: relative;
-  z-index: 0;
+  z-index: 100;
   border-radius: 10px;
   margin: auto 0px;
 `;
@@ -110,11 +110,12 @@ export const ConnectButton = styled.button`
   height: 50px;
   border: none;
   outline: none;
+  position: relative;
   color: #fff;
+  z-index: 100;
   background: #111;
   cursor: pointer;
   position: relative;
-  z-index: 0;
   border-radius: 10px;
   margin: auto 0px;
 

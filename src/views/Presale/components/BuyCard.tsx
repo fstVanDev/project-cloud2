@@ -13,8 +13,9 @@ import { Text } from '@chakra-ui/react'
 const BuyCard = () => {
 
    const [ethBalance, setEthBalance] = useState<number | undefined>(undefined)
-   const { account, active, library, chainId } = useWeb3React<Web3Provider>()
+   const { account, active, library, chainId } = useWeb3React()
    const provider = library
+
 
 
    useEffect(() => {
@@ -24,18 +25,6 @@ const BuyCard = () => {
          })
       }
    })
-
-   // return (
-   //    <div>
-   //       {active ? (
-   //          <Text fontSize="md" w='100%' my='2' align='left'>
-   //             ETH in account: {ethBalance?.toFixed(3)} {chainId === 56 ? 'Test' : ' '} ETH
-   //          </Text>
-   //       ) : (
-   //          <Text fontSize="md" w='100%' my='2' align='left'>ETH in account:</Text>
-   //       )}
-   //    </div>
-   // )
 
    return (
       <PresaleBlock>

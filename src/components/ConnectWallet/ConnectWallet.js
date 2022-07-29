@@ -77,36 +77,10 @@ const ConnectWallet = () => {
 
 
    return (
-         <ActiveBlock>
-            {/* <ConnectButtton1 onClick={() => dropDown()} type="button">
-            {!clicked ? (
-               <p>Switch Network</p>
-            ) : (
-               <DropContainer>
-                  <DropButton type="button" value="1" onClick={switchNetwork}>
-                     Ethereum
-                  </DropButton>
-                  <DropButton type="button" value="56" onClick={switchNetwork}>
-                     BNB Chain
-                  </DropButton>
-                  <DropButton type="button" value="43114" onClick={switchNetwork}>
-                     Avalanche
-                  </DropButton>
-               </DropContainer>
-            )}
-         </ConnectButtton1> */}
-
-            {/* {!active ? (
-               <ConnectButton onClick={onOpen}>Connect Wallet</ConnectButton>
-            ) : (
-               <ConnectButton onClick={disconnect}>
-                  {truncateAddress(account)}
-               </ConnectButton>
-         )} */}
-         
+         <>
          <ConnectButton onClick={onOpen}>Connect Wallet</ConnectButton>
             <SelectWalletModal isOpen={isOpen} closeModal={onClose} />
-         </ActiveBlock>
+         </>
    );
 };
 

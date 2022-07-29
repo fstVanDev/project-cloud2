@@ -3,6 +3,15 @@ import ConnectWallet from '../ConnectWallet/ConnectWallet'
 import { useWeb3React } from "@web3-react/core";
 import { ConnectButton } from '../ConnectWallet/styled';
 import { truncateAddress } from '../ConnectWallet/utils';
+import styled from 'styled-components'
+
+
+const NavbarMainBlock = styled.div`
+position: relative;
+display: flex;
+justify-content: flex-end;
+padding: 20px;
+`
 
 const NavBar = () => {
 
@@ -27,7 +36,7 @@ const NavBar = () => {
    };
 
    return (
-      <div>
+      <NavbarMainBlock>
          {!active ? (
             <ConnectWallet />
          ) : (
@@ -36,7 +45,7 @@ const NavBar = () => {
             </ConnectButton>
          )
          }
-      </div>
+      </NavbarMainBlock>
    )
 }
 
