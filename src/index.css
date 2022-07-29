@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+
+* html {
+   margin: 0px;
+   padding: 24px;
+   box-sizing: border-box;
+}
+
+
+body {
+   margin: 0px;
+   padding: 0px;
+}
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
